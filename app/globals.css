@@ -5,6 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --animate-shimmer: shimmer 1.5s infinite;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -125,5 +126,73 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/*
+ * Page slide transitions.
+ *
+ * The layout <ViewTransition> uses `default` with a transition-type map:
+ *   "navigation-forward" → class "slide-forward"
+ *   "navigation-back"    → class "slide-back"
+ *
+ * `default` applies to ALL animation triggers (enter, exit, update, share).
+ * Since the layout persists across navigations, its trigger is "update" —
+ * enter/exit would never fire. Using `default` ensures it always works.
+ *
+ * CSS differentiates old vs new via ::view-transition-old / ::view-transition-new.
+ * Shared elements with share="auto" still morph (share takes precedence).
+ */
+
+/* Forward: old slides left, new slides in from right */
+::view-transition-old(.slide-forward) {
+  animation: slide-out-to-left 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+::view-transition-new(.slide-forward) {
+  animation: slide-in-from-right 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Back: old slides right, new slides in from left */
+::view-transition-old(.slide-back) {
+  animation: slide-out-to-right 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+::view-transition-new(.slide-back) {
+  animation: slide-in-from-left 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slide-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes slide-out-to-left {
+  to {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes slide-out-to-right {
+  to {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(.slide-forward),
+  ::view-transition-new(.slide-forward),
+  ::view-transition-old(.slide-back),
+  ::view-transition-new(.slide-back) {
+    animation: none;
   }
 }
