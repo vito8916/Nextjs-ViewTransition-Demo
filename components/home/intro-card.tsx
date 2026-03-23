@@ -25,7 +25,7 @@ export function IntroCard({ className }: { className?: string }) {
           <div className="space-y-4">
             <SharedTransition name="vic-name">
               <h1 className="text-3xl leading-tight font-semibold text-balance text-foreground sm:text-4xl">
-                Hi, I&apos;m Victor Alvarado
+                Hi, I&apos;m Jonathan Doe
               </h1>
             </SharedTransition>
             <SharedTransition name="vic-title">

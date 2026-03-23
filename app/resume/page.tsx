@@ -18,7 +18,7 @@ import { ResumeSkills } from "@/components/resume/resume-skills";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Victor Alvarado — Senior Software Engineer",
+  title: "Jonathan Doe — Senior Software Engineer",
   description:
     "Senior software engineer focused on reliable systems, clear interfaces, and thoughtful product engineering.",
 };

@@ -6,9 +6,9 @@ import "./globals.css";
 import { Footer } from "@/components/home/footer";
 
 export const metadata: Metadata = {
-  title: "Victor Alvarado | Senior Software Engineer",
+  title: "Jonathan Doe | Senior Software Engineer",
   description:
-    "Editorial portfolio homepage for Victor Alvarado, a senior software engineer building polished digital products.",
+    "Editorial portfolio homepage for Jonathan Doe, a senior software engineer building polished digital products.",
 };
 
 export default function RootLayout({

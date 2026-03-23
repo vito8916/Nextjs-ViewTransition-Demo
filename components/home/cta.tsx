@@ -27,7 +27,7 @@ export function Cta({ className }: { className?: string }) {
               size="lg"
               className="h-11 rounded-full bg-zinc-50 px-5 text-sm font-medium text-zinc-900 hover:bg-zinc-200"
               render={
-                <Link href="mailto:victor.alvarado@gmail.com">
+                <Link href="mailto:example@gmail.com">
                   <Mail className="size-4" strokeWidth={2.2} />
                   Send me an email
                 </Link>

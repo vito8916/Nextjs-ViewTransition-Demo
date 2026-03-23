@@ -5,7 +5,7 @@ import { getAllProjects } from "@/lib/projects";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Victor Alvarado",
+  title: "Projects | Jonathan Doe",
   description:
     "Selected product and engineering work—case studies authored in MDX.",
 };

@@ -29,7 +29,7 @@ export type CertificationItem = {
 };
 
 export const profile = {
-  name: "Victor Alvarado",
+  name: "Jonathan Doe",
   title: "Senior Software Engineer",
   summary:
     "Full-stack engineer with over 9 years of experience developing web and mobile applications for multinational companies. Experienced in building user-friendly and resilient platforms using Next.js, React, Astro, Node.js, and relational databases such as PostgreSQL and MySQL. Successfully created and maintained SaaS products with back-office systems, AI integrations, and automation scripts, impacting more than 6,000 real users. Improved team efficiency by up to 40% through AI-driven workflows, reusable templates, and technical leadership across the full product lifecycle.",

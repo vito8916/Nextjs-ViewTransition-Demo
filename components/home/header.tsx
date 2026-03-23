@@ -9,19 +9,22 @@ export function Header() {
         aria-label="Primary"
       >
         <Link
+          transitionTypes={["navigation-forward"]}
           href="/"
           className="inline-flex items-center gap-2 font-medium text-foreground"
         >
           <Grip className="size-3.5 text-muted-foreground" />
-          Victorfolio
+          ViewTransitionfolio
         </Link>
         <Link
+          transitionTypes={["navigation-forward"]}
           href="/projects"
           className="text-muted-foreground transition-colors hover:text-foreground"
         >
           Projects
         </Link>
         <Link
+          transitionTypes={["navigation-forward"]}
           href="/resume"
           className="text-muted-foreground transition-colors hover:text-foreground"
         >
