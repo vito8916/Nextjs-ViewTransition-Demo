@@ -8,7 +8,7 @@ import { Footer } from "@/components/home/footer";
 export const metadata: Metadata = {
   title: "Jonathan Doe | Senior Software Engineer",
   description:
-    "Editorial portfolio homepage for Jonathan Doe, a senior software engineer building polished digital products.",
+    "Editorial portfolio with View Transitions API and Next.js 16.2 navigation integration.",
 };
 
 export default function RootLayout({
