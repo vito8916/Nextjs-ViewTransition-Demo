@@ -41,10 +41,6 @@ export default function ResumePage() {
         <ResumeProjects items={projects} />
         <ResumeLanguages items={languages} />
         <ResumeCertifications items={certifications} />
-
-        <footer className="mt-20 border-t border-border pt-10 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Victor Alvarado</p>
-        </footer>
       </div>
     </div>
   );

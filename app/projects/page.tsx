@@ -43,10 +43,6 @@ export default async function ProjectsPage() {
             </article>
           ))}
         </div>
-
-        <footer className="mx-auto mt-20 max-w-2xl border-t border-border pt-10 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Victor Alvarado</p>
-        </footer>
       </main>
     </div>
   );

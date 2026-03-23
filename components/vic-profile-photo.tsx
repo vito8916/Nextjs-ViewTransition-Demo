@@ -14,11 +14,11 @@ export function VicProfilePhoto({ className }: { className?: string }) {
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/vic-photo.jpg"
-        alt="Victor Alvarado"
+        src="/images/pp.webp"
+        alt="Jonathan Doe profile picture"
         width={224}
         height={224}
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover filter grayscale"
         decoding="async"
         fetchPriority="high"
       />

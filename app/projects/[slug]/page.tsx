@@ -53,10 +53,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           />
           <Cta className="mt-8" />
         </div>
-
-        <footer className="mx-auto mt-16 max-w-2xl border-t border-border pt-10 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Victor Alvarado</p>
-        </footer>
       </article>
     </div>
   );

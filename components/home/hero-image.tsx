@@ -12,12 +12,12 @@ export function HeroImage({ className }: { className?: string }) {
         )}
       >
         <Image
-          src="/images/vic-photo.jpg"
-          alt="Victor Alvarado"
+          src="/images/pp.webp"
+          alt="Jonathan Doe profile picture"
           width={400}
           height={560}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 42vw"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover filter grayscale"
           decoding="async"
           fetchPriority="high"
         />

@@ -3,6 +3,7 @@ import { ViewTransition } from "react";
 import { Header } from "@/components/home/header";
 import { bodyFont, monoFont } from "./fonts";
 import "./globals.css";
+import { Footer } from "@/components/home/footer";
 
 export const metadata: Metadata = {
   title: "Victor Alvarado | Senior Software Engineer",
@@ -33,6 +34,7 @@ export default function RootLayout({
         >
           {children}
         </ViewTransition>
+        <Footer />
       </body>
     </html>
   );
