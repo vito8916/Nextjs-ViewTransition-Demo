@@ -17,10 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
       lang="en"
       className={`${bodyFont.variable} ${monoFont.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground">
+      <body className="flex min-h-full flex-col bg-background text-foreground smooth-scroll">
         <Header />
         <ViewTransition
           default={{
