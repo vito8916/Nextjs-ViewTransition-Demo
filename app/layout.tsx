@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { ViewTransition } from "react";
+import { Header } from "@/components/home/header";
+import { bodyFont, monoFont } from "./fonts";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Next.js 16.2.0 - View Transitions Demo",
-  description: "Small demo of Next.js 16.2.0 View Transitions",
+  title: "Victor Alvarado | Senior Software Engineer",
+  description:
+    "Editorial portfolio homepage for Victor Alvarado, a senior software engineer building polished digital products.",
 };
 
 export default function RootLayout({
@@ -26,9 +18,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bodyFont.variable} ${monoFont.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col bg-background text-foreground">
+        <Header />
         <ViewTransition
           default={{
             default: "auto",
