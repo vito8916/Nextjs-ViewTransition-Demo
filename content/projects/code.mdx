@@ -1,0 +1,33 @@
+---
+title: Dev Console
+subtitle: Internal developer portal for services, docs, and runbooks
+excerpt: Created a unified entry point for service catalogs, API references, and on-call playbooks with MDX-backed documentation.
+category: Platform
+date: Nov 2023
+image: /images/project-code.jpg
+accent: "#0f172a"
+icon: code
+order: 3
+platforms: Web
+deliverables: MDX docs, search, service catalog
+website: https://example.com
+gallery:
+  - /images/project-code.jpg
+  - /images/project-hr.jpg
+  - /images/project-crm.jpg
+  - /images/portfolio-reference.png
+---
+
+## Context
+
+Engineers were hunting across three systems to answer “who owns this?” or “how do I roll back?”. The platform group wanted one searchable hub.
+
+## What I did
+
+- Modeled services and ownership in a small content schema, then rendered MDX guides with shared UI primitives.
+- Added deep links from alerts into the right runbook section.
+- Cached expensive index builds at deploy time so search stayed snappy.
+
+## Outcome
+
+Mean time to answer common operational questions dropped, and new service onboarding had a clear template to follow.
