@@ -121,9 +121,7 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html {
-    scroll-behavior: smooth;
-  }
+  
   body {
     @apply bg-background font-sans text-foreground;
     background-color: var(--background);
