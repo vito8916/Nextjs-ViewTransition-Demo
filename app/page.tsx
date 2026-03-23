@@ -10,7 +10,7 @@ import { StatusCard } from "@/components/home/status-card";
 export default function Home() {
   return (
     <div className="page-shell min-h-screen">
-      <main className="mx-auto w-full max-w-5xl px-4 pb-16 pt-6 sm:px-6">
+      <main className="mx-auto w-full max-w-5xl px-4 pb-16 pt-6 md:pt-16 sm:px-6">
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           <HeroImage className="min-h-80 md:min-h-84 lg:col-span-2 lg:min-h-80" />
           <IntroCard className="lg:col-span-2" />
