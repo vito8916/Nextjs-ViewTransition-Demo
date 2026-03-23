@@ -53,7 +53,7 @@ export function IntroCard({ className }: { className?: string }) {
               size="lg"
               className="h-11 rounded-full bg-zinc-900 px-5 text-sm font-medium text-zinc-50 hover:bg-zinc-700"
               render={
-                <Link href="/resume">
+                <Link href="/resume" transitionTypes={["navigation-forward"]}>
                   <Book className="size-4" strokeWidth={2.2} />
                   View my resume
                 </Link>

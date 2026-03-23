@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 const work = [
   {
@@ -33,8 +35,16 @@ const work = [
 
 export function ResumeCard({ className }: { className?: string }) {
   return (
-    <section className={cn("minimal-card p-6 sm:p-7", className)}>
+    <section className={cn("group/card relative minimal-card p-6 sm:p-7", className)}>
       <p className="text-sm font-medium text-muted-foreground">Selected work</p>
+      <Link
+        transitionTypes={["navigation-forward"]}
+        href="/projects"
+        className="absolute right-5 top-5 inline-flex size-8 items-center justify-center rounded-full border border-border bg-background/80 text-muted-foreground transition-colors hover:text-foreground"
+        aria-label="View projects"
+      >
+        <ArrowUpRight className="size-4" strokeWidth={2.2} />
+      </Link>
       <div className="mt-6 space-y-5">
         {work.map((item, index) => (
           <div

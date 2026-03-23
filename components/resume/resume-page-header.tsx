@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 type ResumePageHeaderProps = {
@@ -10,9 +11,10 @@ export function ResumePageHeader({ email }: ResumePageHeaderProps) {
       <Link
         href="/"
         transitionTypes={["navigation-back"]}
-        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+        className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
-        ← Home
+        <ArrowLeft className="size-4" strokeWidth={2.2} />
+        Back to home
       </Link>
       <a
         href={`mailto:${email}`}
