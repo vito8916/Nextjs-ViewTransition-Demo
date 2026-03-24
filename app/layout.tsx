@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ViewTransition } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "@/components/home/header";
 import { bodyFont, monoFont } from "./fonts";
 import "./globals.css";
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
         </ViewTransition>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
