@@ -18,8 +18,7 @@ export function HeroImage({ className }: { className?: string }) {
           height={560}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 42vw"
           className="h-full w-full object-cover filter grayscale"
-          decoding="async"
-          fetchPriority="high"
+          priority
         />
       </div>
     </SharedTransition>
